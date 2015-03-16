@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Flex 1</title>
+    <style>
+        
+        
+        .button-container {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display:flex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row;
+            justify-content: center;
+            
+        }
+
+        .button {
+            background: darksalmon;
+            margin: 5px;
+            
+        }
+        .button:hover {
+            background: tomato;
+        }
+        #flex-container {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            
+            display: -webkit-flex;
+            display: -ms-flex;
+            display:flex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        .flex-item, .button {
+            
+            padding: 5px;
+            width: 200px;
+            height: 150px;
+            margin-top: 10px;
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+        }
+        .flex-item {
+            background: tomato;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="button-container">
+        <div class="button" id="add">Add</div>
+        <div class="button" id="delete">Delete</div>
+    </div>
+
+    <ul id="flex-container">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+        <li class="flex-item">6</li>
+    </ul>
+    <script>
+        var contador = 6;
+        document.getElementById('add').addEventListener('click', function() {
+            var llista = document.getElementById('flex-container');
+            var newElement = document.createElement('li');
+            newElement.setAttribute('class','flex-item');
+            newElement.innerHTML =++contador;
+            llista.appendChild(newElement);
+        });
+        
+        document.getElementById('delete').addEventListener('click', function() {
+            if (contador > 0) {
+                var llista = document.getElementById('flex-container');
+                llista.removeChild(llista.querySelector('li:last-child'));
+                --contador;
+            }
+        });
+    </script>
+</body>
+</html>

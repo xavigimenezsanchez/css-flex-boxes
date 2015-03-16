@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemples de caixes flex</title>
+</head>
+    <style type="text/css">
+        #caixa1 {
+            display: flex;
+            border: 2px solid olive;
+            height: 400px;
+            
+        }
+        #caixa1 div:nth-child(1) {
+            align-self: flex-start;
+            height: 150px;
+        }
+        #caixa1 div:nth-child(2) {
+            align-self: flex-end;
+        }
+        #caixa1 div:nth-child(3) {
+            align-self: center;
+            height: 150px;
+        }
+         #caixa1 div:nth-child(4) {
+            align-self: baseline;
+            height: 100px;
+            line-height: 20px;
+        }
+         #caixa1 div:nth-child(5) {
+            align-self: baseline;
+            height: 200px;
+        }
+         #caixa1 div:nth-child(6) {
+            align-self: stretch;
+            
+        }
+        .caixa > div {
+            background-color: orange;
+            margin: 5px;
+            width: 150px;
+            
+        
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+            text-align: center;
+        }
+        
+    </style>
+<body>
+    <div class="container">
+        <div class="exemple1">
+            <h1>align-self</h1>
+            <div id="caixa1" class="caixa">
+                <div>flex-start</div>
+                <div>flex-end</div>
+                <div>center</div>
+                <div>baseline</div>
+                <div>baseline</div>
+                <div>stretch</div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

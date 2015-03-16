@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemples de caixes flex</title>
+</head>
+    <style type="text/css">
+        #caixa1 {
+            display: flex;
+            flex-direction: row;
+        }
+        #caixa2 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        #caixa3 {
+            display: flex;
+            flex-direction: column;
+        }
+        #caixa4 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .caixa > div {
+            background-color: orange;
+            margin: 5px;
+            width: 150px;
+            height: 150px;
+        
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+        }
+        
+    </style>
+<body>
+    <div class="container">
+        <div class="exemple1">
+            <h1>Flex-direction: row</h1>
+            <div id="caixa1" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="exemple2">
+            <h1>Flex-direction: row-reverse</h1>
+            <div id="caixa2" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="exemple3">
+            <h1>Flex-direction: column</h1>
+            <div id="caixa3" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="exemple4">
+            <h1>Flex-direction: column-reverse</h1>
+            <div id="caixa4" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

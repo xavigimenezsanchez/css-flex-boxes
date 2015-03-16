@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemples de caixes flex</title>
+</head>
+    <style type="text/css">
+        #caixa1 {
+            display: flex;
+            
+        }
+        #caixa1 div:nth-child(1) {
+            flex-basis: inherit;
+        }
+        #caixa1 div:nth-child(2) {
+            flex-basis: 50px;
+        }
+        #caixa1 div:nth-child(3) {
+            flex-basis: 100%;
+        }
+        .caixa > div {
+            background-color: orange;
+            margin: 5px;
+            width: 150px;
+            height: 150px;
+        
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+        }
+        
+    </style>
+<body>
+    <div class="container">
+        <div class="exemple1">
+            <h1>flex-basis</h1>
+            <div id="caixa1" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

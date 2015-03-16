@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemples de caixes flex</title>
+</head>
+    <style type="text/css">
+        #caixa1 {
+            display: flex;
+            align-items: flex-start;
+        }
+        #caixa2 {
+            display: flex;
+            align-items: flex-end;
+        }
+        #caixa3 {
+            display: flex;
+            align-items: center;
+
+        }
+        #caixa3  div:nth-child(2) {
+            height: 100px;
+            line-height: 100px;
+        }
+        #caixa3  div:nth-child(3) {
+            height: 200px;
+            line-height: 200px;
+        }
+        #caixa4 {
+            display: flex;
+            align-items: baseline;
+        }
+        #caixa4  div:nth-child(2) {
+            height: 100px;
+            
+        }
+        #caixa4  div:nth-child(3) {
+            height: 200px;
+            line-height: 200px;
+        }
+        #caixa5 {
+            display: flex;
+            align-items: stretcht;
+        }
+        .exemple > div {
+            height: 250px;
+            border: 1px solid black;
+        }
+        .caixa > div {
+            background-color: orange;
+            margin: 10px;
+            width: 150px;
+            
+        
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+        }
+        
+    </style>
+<body>
+    <div class="container">
+        <div class="exemple">
+            <h1>align-items: flex-start</h1>
+            <div id="caixa1" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="exemple">
+            <h1>jalign-items: flex-end</h1>
+            <div id="caixa2" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="exemple">
+            <h1>align-items: center</h1>
+            <div id="caixa3" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="exemple">
+            <h1>align-items: baseline</h1>
+            <div id="caixa4" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                
+            </div>
+        </div>
+        <div class="exemple">
+            <h1>align-items: stretcht</h1>
+            <div id="caixa5" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

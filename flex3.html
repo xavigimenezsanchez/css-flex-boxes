@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemples de caixes flex</title>
+</head>
+    <style type="text/css">
+        #caixa1 {
+            display: flex;
+            justify-content: flex-start;
+        }
+        #caixa2 {
+            display: flex;
+            justify-content: flex-end;
+        }
+        #caixa3 {
+            display: flex;
+            justify-content: center;
+        }
+        #caixa4 {
+            display: flex;
+            justify-content: space-between;
+        }
+        #caixa5 {
+            display: flex;
+            justify-content: space-around;
+        }
+        .caixa > div {
+            background-color: orange;
+           
+            width: 150px;
+            height: 150px;
+        
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+        }
+        
+    </style>
+<body>
+    <div class="container">
+        <div class="exemple1">
+            <h1>justify-content: flex-start</h1>
+            <div id="caixa1" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="exemple2">
+            <h1>justify-content: flex-end</h1>
+            <div id="caixa2" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="exemple3">
+            <h1>justify-content: center</h1>
+            <div id="caixa3" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="exemple4">
+            <h1>justify-content: space-between</h1>
+            <div id="caixa4" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                
+            </div>
+        </div>
+        <div class="exemple5">
+            <h1>justify-content: space-around</h1>
+            <div id="caixa5" class="caixa">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
